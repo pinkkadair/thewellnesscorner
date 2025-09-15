@@ -114,9 +114,6 @@ thewellnesscorner/
 
 ## 📍 Location & Contact
 
-**Address**: 15182 N. 75th Ave, Suite 180, Peoria, AZ 85381  
-**Phone**: 623-257-3350  
-**Email**: support@azwellnesscorner.com
 
 ## 🔍 SEO Optimization
 
@@ -187,8 +184,7 @@ This is a private project for The Wellness Corner. For updates or modifications,
 ## 📞 Support
 
 For technical support or questions about the website:
-- **Email**: support@azwellnesscorner.com
-- **Phone**: 623-257-3350
+
 
 ---
 
