@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  name          String
+  specialty     String?
+  bio           String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  patients      Patient[]
+  appointments  Appointment[]
+  equipmentLeases EquipmentLease[]
+  roomBookings  RoomBooking[]
+  productOrders ProductOrder[]
+}
+
+model Patient {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  name          String
+  phone         String?
+  dateOfBirth   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  provider      User      @relation(fields: [providerId], references: [id])
+  providerId    String
+  appointments  Appointment[]
+}
+
+model Appointment {
+  id          String    @id @default(uuid())
+  date        DateTime
+  duration    Int       // in minutes
+  status      String    // pending, confirmed, completed, cancelled
+  notes       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  patient     Patient   @relation(fields: [patientId], references: [id])
+  patientId   String
+  provider    User      @relation(fields: [providerId], references: [id])
+  providerId  String
+  room        Room      @relation(fields: [roomId], references: [id])
+  roomId      String
+}
+
+model Room {
+  id            String    @id @default(uuid())
+  number        String    @unique
+  type          String    // treatment, consultation, procedure
+  appointments  Appointment[]
+  bookings      RoomBooking[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Equipment {
+  id            String    @id @default(uuid())
+  name          String
+  description   String
+  dailyRate     Float     @map("daily_rate")
+  monthlyRate   Float     @map("monthly_rate")
+  available     Boolean   @default(true)
+  imageUrl      String?   @map("image_url")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  leases        EquipmentLease[]
+
+  @@map("equipment")
+}
+
+model EquipmentLease {
+  id          String    @id @default(uuid())
+  startDate   DateTime
+  endDate     DateTime
+  type        String    // daily, monthly
+  status      String    // active, pending, completed
+  equipment   Equipment @relation(fields: [equipmentId], references: [id])
+  equipmentId String
+  provider    User      @relation(fields: [providerId], references: [id])
+  providerId  String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model RoomBooking {
+  id          String    @id @default(uuid())
+  startDate   DateTime
+  endDate     DateTime
+  type        String    // full-day, half-day, hourly
+  status      String    // pending, confirmed, completed
+  room        Room      @relation(fields: [roomId], references: [id])
+  roomId      String
+  provider    User      @relation(fields: [providerId], references: [id])
+  providerId  String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id          String    @id @default(uuid())
+  name        String
+  type        String    // neurotoxin, filler, etc.
+  description String
+  price       Float
+  minOrder    Int       @map("min_order")
+  unit        String
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  orders      ProductOrder[]
+
+  @@map("products")
+}
+
+model ProductOrder {
+  id          String    @id @default(uuid())
+  quantity    Int
+  totalPrice  Float
+  status      String    // pending, confirmed, shipped, delivered
+  product     Product   @relation(fields: [productId], references: [id])
+  productId   String
+  provider    User      @relation(fields: [providerId], references: [id])
+  providerId  String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
