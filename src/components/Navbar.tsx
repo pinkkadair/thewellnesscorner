@@ -28,6 +28,8 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/about" className="text-brand-dark hover:text-brand-primary">About</Link>
             <Link to="/services" className="text-brand-dark hover:text-brand-primary">Services</Link>
+            <a href="#directory" className="text-brand-dark hover:text-brand-primary">Directory</a>
+            <a href="#support" className="text-brand-dark hover:text-brand-primary">Support Us</a>
             <Link to="/contact" className="text-brand-dark hover:text-brand-primary">Contact</Link>
             {/* Dashboard button removed */}
           </div>
@@ -58,6 +60,18 @@ export function Navbar() {
             >
               Services
             </Link>
+            <a
+              href="#directory"
+              className="block px-3 py-2 text-brand-dark hover:text-brand-primary"
+            >
+              Directory
+            </a>
+            <a
+              href="#support"
+              className="block px-3 py-2 text-brand-dark hover:text-brand-primary"
+            >
+              Support Us
+            </a>
             <Link
               to="/contact"
               className="block px-3 py-2 text-brand-dark hover:text-brand-primary"
