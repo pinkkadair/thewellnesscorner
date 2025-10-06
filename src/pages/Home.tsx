@@ -17,10 +17,10 @@ export function Home() {
         <div className="absolute inset-0 bg-brand-dark bg-opacity-50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Medical Office for Rent in Peoria, Arizona - Launch Your Practice Today
+            Your Healthcare Practice Starts Here
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Premium medical office space for rent in Peoria, AZ with medical director services for laser technicians and RNs. Flexible medical office leasing with full support staff and state-of-the-art facilities.
+            Join a thriving community of healthcare providers in Peoria, Arizona. Get everything you need to launch and grow your practice with flexible space, expert support, and state-of-the-art facilities.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link to="/contact">
@@ -36,17 +36,17 @@ export function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-brand-primary">Medical Office Space for Lease in Peoria, Arizona</h2>
+            <h2 className="text-3xl font-bold mb-4 text-brand-primary">Everything You Need to Succeed</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional medical office rental in Peoria, AZ with medical director services for healthcare providers. Start your medical practice immediately with our comprehensive suite of business tools and support.
+              We've built The Wellness Corner to remove the barriers that keep talented healthcare providers from serving their communities. No more overwhelming startup costs or complex logistics – just focus on what you do best.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-brand-light rounded-xl p-8 text-center">
               <Rocket className="w-12 h-12 text-brand-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-brand-dark">Instant Setup</h3>
-              <p className="text-gray-600 mb-4">Get started immediately with everything you need</p>
+              <h3 className="text-xl font-semibold mb-4 text-brand-dark">Walk In & Start Practicing</h3>
+              <p className="text-gray-600 mb-4">Everything's ready when you are</p>
               <ul className="space-y-2 text-left">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-brand-primary mr-2 flex-shrink-0" />
@@ -61,8 +61,8 @@ export function Home() {
             
             <div className="bg-brand-light rounded-xl p-8 text-center">
               <Shield className="w-12 h-12 text-brand-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-brand-dark">Complete Support</h3>
-              <p className="text-gray-600 mb-4">Full business infrastructure included</p>
+              <h3 className="text-xl font-semibold mb-4 text-brand-dark">We've Got Your Back</h3>
+              <p className="text-gray-600 mb-4">All the business stuff is handled</p>
               <ul className="space-y-2 text-left">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-brand-primary mr-2 flex-shrink-0" />
@@ -77,8 +77,8 @@ export function Home() {
             
             <div className="bg-brand-light rounded-xl p-8 text-center">
               <Clock className="w-12 h-12 text-brand-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-brand-dark">Flexible Terms</h3>
-              <p className="text-gray-600 mb-4">Choose what works for your practice</p>
+              <h3 className="text-xl font-semibold mb-4 text-brand-dark">Your Schedule, Your Terms</h3>
+              <p className="text-gray-600 mb-4">Work when and how you want</p>
               <ul className="space-y-2 text-left">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-brand-primary mr-2 flex-shrink-0" />
@@ -98,9 +98,9 @@ export function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-brand-primary">Medical Practices in Peoria, Arizona</h2>
+            <h2 className="text-3xl font-bold mb-4 text-brand-primary">A Home for Every Practice</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our medical office facility in Peoria, AZ hosts a diverse range of healthcare and wellness practices including aesthetic medicine, primary care, and holistic health services
+              From aesthetic medicine to primary care, our Peoria facility welcomes diverse healthcare practices. Each provider brings unique expertise while sharing our commitment to community wellness.
             </p>
           </div>
 
@@ -178,9 +178,9 @@ export function Home() {
       <section className="py-20 bg-brand-light/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-brand-primary">Premium Equipment Access</h2>
+            <h2 className="text-3xl font-bold mb-4 text-brand-primary">Access to Premium Technology</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Start treating patients immediately with our state-of-the-art equipment leasing program
+              Skip the massive equipment investments and start treating patients with our latest technology. We handle the maintenance, training, and support so you can focus on patient care.
             </p>
           </div>
 
@@ -436,10 +436,10 @@ export function Home() {
       <section className="py-20 bg-brand-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Start Your Practice?
+            Ready to Make Your Mark?
           </h2>
           <p className="text-xl text-white mb-8">
-            Join The Wellness Corner and get everything you need to succeed
+            Join our community of healthcare providers and start making a difference in your patients' lives today
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact">
