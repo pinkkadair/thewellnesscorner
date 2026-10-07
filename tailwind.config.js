@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
+      },
       colors: {
         teal: {
           50: '#f0fdfa',
@@ -20,11 +24,12 @@ export default {
           900: '#134e4a',
         },
         brand: {
-          primary: '#3a7d7c',
-          secondary: '#6a9a9a',
-          accent: '#e8c48a',
-          light: '#f4f1e9',
-          dark: '#2c3e50'
+          primary: '#1e5c54',
+          secondary: '#7d9a8a',
+          accent: '#b8893d',
+          light: '#f6f0e4',
+          dark: '#12211e',
+          ink: '#1c2b28'
         }
       },
       backgroundImage: {

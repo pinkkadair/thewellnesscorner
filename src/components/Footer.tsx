@@ -5,54 +5,52 @@ import { Link } from 'react-router-dom';
 export function Footer() {
   return (
     <footer className="bg-brand-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+      <div className="h-1 bg-brand-accent" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="md:col-span-1">
             <Logo variant="light" />
-            <p className="text-gray-400 mt-4">
-              A centralized location for aesthetic, medical, and holistic health services.
+            <p className="text-white/70 mt-5 leading-relaxed">
+              Independent healthcare, shared under one roof in Peoria.
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white">Services</Link></li>
-              <li><a href="#directory" className="text-gray-400 hover:text-white">Directory</a></li>
-              <li><a href="#support" className="text-gray-400 hover:text-white">Support Us</a></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
+            <h4 className="text-brand-accent text-xs uppercase tracking-[0.18em] mb-4">Visit</h4>
+            <ul className="space-y-2 text-white/75">
+              <li><Link to="/about" className="hover:text-white">About</Link></li>
+              <li><Link to="/services" className="hover:text-white">Services</Link></li>
+              <li><Link to="/#directory" className="hover:text-white">Directory</Link></li>
+              <li><Link to="/events" className="hover:text-white">Events</Link></li>
+              <li><Link to="/foundation" className="hover:text-white">Foundation</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>15182 N. 75th Ave</li>
-              <li>Suite 180</li>
-              <li>Peoria, AZ 85381</li>
-              <li>Phone: 623-257-3350</li>
-              <li>Email: <Link to="/contact" className="hover:text-brand-accent">support@azwellnesscorner.com</Link></li>
+            <h4 className="text-brand-accent text-xs uppercase tracking-[0.18em] mb-4">The office</h4>
+            <ul className="space-y-2 text-white/75">
+              <li>8877 West Union Hills Dr.</li>
+              <li>Suite 160</li>
+              <li>Peoria, AZ 85382</li>
+              <li className="pt-2">623-257-3350</li>
+              <li>
+                <a href="mailto:support@azwellnesscorner.com" className="hover:text-brand-accent">
+                  support@azwellnesscorner.com
+                </a>
+              </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-brand-accent">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-accent">
-                <Instagram size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-accent">
-                <Twitter size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-accent">
-                <Linkedin size={24} />
-              </a>
+            <h4 className="text-brand-accent text-xs uppercase tracking-[0.18em] mb-4">Follow</h4>
+            <div className="flex space-x-4 text-white/70">
+              <a href="#" className="hover:text-brand-accent" aria-label="Facebook"><Facebook size={22} /></a>
+              <a href="#" className="hover:text-brand-accent" aria-label="Instagram"><Instagram size={22} /></a>
+              <a href="#" className="hover:text-brand-accent" aria-label="Twitter"><Twitter size={22} /></a>
+              <a href="#" className="hover:text-brand-accent" aria-label="LinkedIn"><Linkedin size={22} /></a>
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} The Wellness Corner. All rights reserved.</p>
+        <div className="mt-12 pt-6 border-t border-white/10 text-sm text-white/50 flex flex-col sm:flex-row sm:justify-between gap-2">
+          <p>&copy; {new Date().getFullYear()} The Wellness Corner</p>
+          <p>Peoria, Arizona</p>
         </div>
       </div>
     </footer>

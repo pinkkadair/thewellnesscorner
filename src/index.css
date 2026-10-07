@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply text-gray-900 antialiased bg-brand-light/30;
+    @apply text-brand-ink antialiased bg-brand-light font-sans;
+  }
+
+  h1, h2, h3 {
+    @apply font-display text-brand-ink;
+    font-feature-settings: "ss01" on;
   }
 }
 

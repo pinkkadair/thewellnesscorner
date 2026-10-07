@@ -16,7 +16,7 @@ export function Button({
   return (
     <button
       className={clsx(
-        'rounded-lg font-medium transition-colors',
+        'rounded-sm font-semibold tracking-wide transition-colors',
         {
           // Size variations
           'px-3 py-1 text-sm': size === 'sm',

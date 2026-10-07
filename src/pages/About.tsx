@@ -4,18 +4,16 @@ import { Button } from '../components/Button';
 
 export function About() {
   return (
-    <div className="min-h-screen bg-brand-light/30">
-      {/* Hero Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark">
-              About The Wellness Corner - Medical Office for Rent in Peoria, Arizona
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Your premier medical office rental facility in Peoria, Arizona. We provide medical director services for laser technicians and RNs, offering flexible medical office leasing with comprehensive healthcare and wellness support.
-            </p>
-          </div>
+    <div className="min-h-screen bg-[#fbf8f2]">
+      <section className="border-b border-[#e4d7c2]">
+        <div className="max-w-4xl mx-auto px-6 py-16 lg:py-20">
+          <p className="text-xs uppercase tracking-[0.28em] text-brand-accent font-semibold mb-4">About</p>
+          <h1 className="text-5xl md:text-6xl leading-[0.95] text-brand-dark mb-6">
+            A medical office built for independent providers.
+          </h1>
+          <p className="text-xl text-brand-ink/80 leading-relaxed">
+            The Wellness Corner is a medical office for rent in Peoria, Arizona, with medical director services for laser technicians and registered nurses, flexible leasing, and the support to run a practice.
+          </p>
         </div>
       </section>
 
@@ -32,7 +30,7 @@ export function About() {
                 We believe in creating an environment that supports both providers and patients, fostering collaboration, innovation, and the highest standards of care in our medical office space for lease in Peoria, Arizona.
               </p>
             </div>
-            <div className="bg-brand-light rounded-xl p-8">
+            <div className="bg-brand-light border border-[#e4d7c2] p-8">
               <Target className="w-16 h-16 text-brand-primary mb-6" />
               <h3 className="text-2xl font-semibold mb-4 text-brand-dark">Our Vision</h3>
               <p className="text-gray-600">
@@ -54,7 +52,7 @@ export function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 text-center shadow-md">
+            <div className="bg-white border border-[#e4d7c2] p-8 text-center shadow-md">
               <Building2 className="w-12 h-12 text-brand-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-brand-dark">Premium Facilities</h3>
               <ul className="space-y-2 text-left">
@@ -68,12 +66,12 @@ export function About() {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-brand-primary mr-2 flex-shrink-0" />
-                  <span className="text-sm">State-of-the-art equipment</span>
+                  <span className="text-sm">Furnished treatment rooms</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-8 text-center shadow-md">
+            <div className="bg-white border border-[#e4d7c2] p-8 text-center shadow-md">
               <Users className="w-12 h-12 text-brand-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-brand-dark">Complete Support</h3>
               <ul className="space-y-2 text-left">
@@ -92,7 +90,7 @@ export function About() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-8 text-center shadow-md">
+            <div className="bg-white border border-[#e4d7c2] p-8 text-center shadow-md">
               <Heart className="w-12 h-12 text-brand-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-brand-dark">Flexible Options</h3>
               <ul className="space-y-2 text-left">
@@ -176,11 +174,11 @@ export function About() {
             Located in the heart of Peoria, Arizona, our facility is easily accessible and designed for your success
           </p>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 max-w-2xl mx-auto mb-8">
+          <div className="bg-white/10 backdrop-blur-sm border border-[#e4d7c2] p-8 max-w-2xl mx-auto mb-8">
             <h3 className="text-xl font-semibold mb-4 text-white">Contact Information</h3>
             <div className="space-y-2 text-white/90">
-              <p>15182 N. 75th Ave, Suite 180</p>
-              <p>Peoria, AZ 85381</p>
+              <p>8877 West Union Hills Dr., Suite 160</p>
+              <p>Peoria, AZ 85382</p>
               <p>Phone: 623-257-3350</p>
               <p>Email: support@azwellnesscorner.com</p>
             </div>
